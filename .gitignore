@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local config and secrets
+.env
+config.json
+
+# Editor and OS files
+*.swp
+*.swo
+.DS_Store
+
+# Agent runtime artifacts
+run_logs/
+trace_logs/
+

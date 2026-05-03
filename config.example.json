@@ -1,0 +1,6 @@
+{
+  "model": "your/openrouter-model",
+  "temperature": 0.2,
+  "max_steps": 20
+}
+
