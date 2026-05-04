@@ -80,24 +80,24 @@ Important LLM parameters in `config.json`:
 
 ## Conversation Log
 
-`llm_chat.py` saves user and assistant messages to a JSONL log:
+`cli.py` saves user and assistant messages to a per-session JSONL log:
 
 ```text
-memory/chat.jsonl
+memory/sessions/<session-id>.jsonl
 ```
 
 The `memory/` directory is ignored by Git because it may contain private
 conversation data.
 
-By default, saved messages are only logged. They are not loaded into new chat
-sessions. To manually resume recent context:
+By default, each CLI run creates a new session. Saved messages are logged but
+not loaded into unrelated sessions.
+
+To continue a specific session, pass its session id. The full session history
+is loaded:
 
 ```bash
-python3 llm_chat.py --resume 10
+python3 cli.py --session 20260504T102030Z
 ```
-
-This loads the most recent 10 saved user/assistant messages after the system
-message.
 
 ## Learning Approach
 
