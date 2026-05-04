@@ -21,6 +21,6 @@ config.json
 .DS_Store
 
 # Agent runtime artifacts
+memory/
 run_logs/
 trace_logs/
-
