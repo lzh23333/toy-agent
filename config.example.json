@@ -1,6 +1,6 @@
 {
   "api_key": "sk-or-your-api-key",
-  "model": "your/openrouter-model",
+  "model": "baidu/cobuddy:free",
   "temperature": 0.2,
   "max_tokens": 2560,
   "top_p": 0.8,
